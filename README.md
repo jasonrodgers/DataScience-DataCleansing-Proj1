@@ -5,10 +5,10 @@ To run the run_analysis.R script, copy it to your working directory and execute
 the below command.  The dplyr package is required to run the script, but the script
 will automatically install dplyr if it is not already installed.
 
-...
+```r
 if (!("dplyr" %in% installed.packages())) install.packages("dplyr")
 source("run_analysis.R")
-...
+```
 
 The script will download the dataset.zip file from the link below, unzip the 
 file, and process it.
