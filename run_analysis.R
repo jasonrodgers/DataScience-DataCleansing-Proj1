@@ -97,7 +97,8 @@ resultsMerged <- rbind(testResultsMerged, trainResultsMerged)
 ## write the merged data out to a file
 ## NOT NEEDED write.csv(resultsMerged, file = "testTrainMerged.csv",row.names=FALSE)
 
-## load the dplyr library for summarization
+## load the dplyr library for summation
+if (!("dplyr" %in% installed.packages())) install.packages("dplyr")
 library(dplyr)
 
 ## summarize results by activity and subject
